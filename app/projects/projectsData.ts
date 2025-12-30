@@ -12,6 +12,7 @@ export type Project = {
   heroImage?: string; // main image
   gallery?: string[]; // extra images
   links?: { label: string; href: string }[];
+  documents?: { label: string; href: string }[];
   videos?: {
     title: string;
     src: string; // local /public path or embedded URL
@@ -90,6 +91,25 @@ export const projects: Project[] = [
         },
     ],
     },
+
+      {
+    slug: "bioe-121-proj",
+    title: " 💊 Microfluidic Minimum Inhibitory Concentration Test for Point of Care Assessment of Typhoid Fever",
+    subtitle: "",
+    timeline: "Fall 2025",
+    featured: false,
+    highlight:
+      "",
+    summary: ["Developed a fabrication protocol and device design for a microfluidic point-of-care device that finds the minimum inhibitory concentration (MIC) of antibiotics against Salmonella Typhi directly from a drop of blood. In calculating the exponential growth rate of bacteria and choosing dimensions for our ladder channels, our device achieves a readout time within 9 hours."
+    ],
+    tags: ["C", "GDB/CGDB", "Git", "Linux"],
+    documents: [
+      {
+        label: "BioE 121 Final Project Report",
+        href: "/bioe-121_finalproj.pdf",
+      },
+    ],
+  },
 
   {
     slug: "snek-game",
